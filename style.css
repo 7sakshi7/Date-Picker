@@ -1,0 +1,190 @@
+@import url('https://font.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+ font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: #161623;
+    background: url('/pngtree-modern-2021-colors-geometrics-background-design-image_558023.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+#navbar {
+    position: fixed;
+    box-shadow: 20px 15px 50px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 1;
+    height: 7%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-left: 25px;
+    margin: 10px;
+    text-align: left;
+}
+#navbar li{
+    display: inline-block;
+    padding-top: 10px;
+}
+#navbar li a{
+    text-decoration: none;
+    margin: 20px;
+    font-size: 20px;
+    color: aliceblue;
+    font-weight: 700;
+    text-align: center;
+}
+#navbar li a:hover{
+    background-color: aliceblue;
+    color: #161623;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+#section{
+    position: absolute;
+    height: 100px;
+    width: 100vw;
+    top: 80px;
+    color: aliceblue;
+}
+#from{
+    position: absolute;
+    top: 40px;
+    left: 363px;
+}
+.date-picker-from{
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    height: 60px;
+    background-color: #fff;
+    color: #161623;
+    margin: 20px 529px;
+    box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.7);
+    font-size: 23px;
+    font-weight: 700;
+    cursor: pointer;
+    user-select: none;
+}
+.date-picker:hover{
+    background-color: #e0d7d7;
+}
+
+.date-picker .selected-date{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.date-picker .dates{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+.date-picker .dates.active{
+    display: block;
+    background-color: #e0d7d7;
+    border: 2px solid #313131;
+    box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.3);
+}
+.date-picker .dates:active,
+.date-picker .dates:focus{
+    display: block;
+    background-color: #e0d7d7;
+    
+}
+.date-picker .dates .month{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #eee;
+    font-size: 20px;
+}
+.date-picker .dates .month .arrows{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #313131;
+    font-size: 20px;
+    
+}
+.date-picker .dates .month .arrows:hover{
+    background-color: #f3f3f3;
+}
+.date-picker .dates .month .arrows:active{
+    background-color: rgb(115, 124, 124);
+}
+.date-picker .dates .days{
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    background-color: rgb(237, 237, 245);
+    z-index: -1;
+}
+.date-picker .dates .days .day{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #313131;
+}
+.date-picker .dates .days .day.selected{
+    background-color: #00CA85;
+}
+.search{
+    position: absolute;
+    top: 0;
+    left: 400px;
+
+}
+.btn{
+    padding: 15px 20px;
+    font-size: large;
+    font-weight: bolder;
+    border-radius: 50px;
+    outline: 0;
+    border: 0;
+    box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.7);
+}
+#footertable{
+    position: absolute;
+    top: 200px;
+    left: 70px;
+    width: 100vw;
+    height: 400px;
+    color: aliceblue;
+    z-index: -2;
+}
+#footertable table{
+    margin:0px 80px;
+    border: 2px solid black;
+    background-color: rgba(245, 245, 245, 0.753);
+    border-collapse: collapse;
+    width: 1150px;
+}
+th{
+    padding: 10px 20px;
+    background-color: rgba(54, 50, 50, 0.205);
+    font-size: 20px;
+    color: #161623;
+    border: 2px solid black;
+}
+td{
+    color: #161623;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 2px solid black;
+
+}
